@@ -41,3 +41,17 @@ public class DuplicateEncoder {
     return res;
   }
 }
+
+
+class DuplicateEncoderBest {
+  static String encode(String word){
+    word = word.toLowerCase();
+
+    String res = "";
+    for (int i = 0; i < word.length(); ++i) {
+      char c = word.charAt(i);
+      result += word.lastIndexOf(c) == word.indexOf(c) ? "(" : ")"; // I this is the first or not then..
+    }
+    return res;
+  }
+}
